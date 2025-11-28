@@ -14,4 +14,4 @@ def start(message):
     markup.add(b3)
     markup.add(b4)
     bot.send_message(message.chat.id, "Какой аниме хотите посмотреть?", reply_markup=markup)
-bot.infinity_polling()
+bot.infinity_polling(timeout=10,long_polling_timeout= 5)
